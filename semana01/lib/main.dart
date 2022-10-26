@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Teste Flutter Aula 01', // alteração do titulo a aba
+      title: 'Teste Flutter Aula 01', // alteração do titulo da aba
       theme: ThemeData(
         // This is the theme of your application.
         //
