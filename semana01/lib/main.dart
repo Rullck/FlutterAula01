@@ -29,8 +29,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class MyHomePage extends StatefulWidget { //Este widget é a página inicial do seu aplicativo. É stateful, que tem um objeto State que contém campos que afetam as aparencias.
+  const MyHomePage({super.key, required this.title}); //Ele contém os valores (neste caso o título) fornecidos pelo pai (neste caso o widget App) e usados pelo método build do State.
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -47,7 +47,7 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageState extends State<MyHomePage> { //informa ao framework Flutter que algo mudou neste estado, fazendo com que ele execute novamente o método de compilação abaixo
   int _counter = 0;
 
   void _incrementCounter() {
